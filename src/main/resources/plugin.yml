@@ -1,0 +1,6 @@
+name: SimuXCore
+version: '${project.version}'
+main: com.github.simux.simuxcore.SimuXCore
+api-version: 1.19
+authors: [hapily]
+website: https://github.com/SimuXMC/SimuXCore
