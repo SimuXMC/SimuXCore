@@ -25,11 +25,12 @@ public class MessageUtils {
     }
 
     private MessageUtils() {
-        throw new RuntimeException("A utility class should not be instantiated.");
+        throw new IllegalStateException("A utility class should not be instantiated.");
     }
 
     /**
-     * Utility method used to make sending message feedback to players a tad less painful
+     * Utility method used to make sending message feedback to players a tad less painful <br>
+     * All parameters will be serialized by minimessage, so strip tags beforehand accordingly.
      *
      * @param sender The person who the message will be sent to
      * @param prefix The prefix that will be colored with {@link Color#PREFIX_COLOR} and bolded
@@ -41,7 +42,8 @@ public class MessageUtils {
 
     /**
      * Utility method used to make sending message feedback to players a tad less painful <br>
-     * Has more parameters to allow for customization of the feedback, while keeping it relatively streamlined
+     * Has more parameters to allow for customization of the feedback, while keeping it relatively streamlined <br>
+     * All parameters will be serialized by minimessage, so strip tags beforehand accordingly.
      *
      * @param sender The person who the message will be sent to
      * @param prefixColor The color that the prefix will be
@@ -57,7 +59,8 @@ public class MessageUtils {
     /**
      * Utility method used to make sending message feedback to players a tad less painful <br>
      * Has more parameters to allow for customization of the feedback, while keeping it relatively streamlined <br>
-     * Allows the method caller to input a {@link Color} value that automatically is converted to a usable string
+     * Allows the method caller to input a {@link Color} value that automatically is converted to a usable string <br>
+     * All parameters will be serialized by minimessage, so strip tags beforehand accordingly.
      *
      * @param sender The person who the message will be sent to
      * @param prefixColor The color that the prefix will be

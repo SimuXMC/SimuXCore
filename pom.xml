@@ -80,6 +80,7 @@
             <groupId>com.github.hapily04</groupId>
             <artifactId>SimpleCommandSystem</artifactId>
             <version>1.2</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

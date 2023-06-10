@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 @Description("Sets the player's gamemode to creative")
 @Aliases(value = "c", registerAsTabCompletions = true)
 @SubCommand(parent = CmdGamemode.class)
-public class SubCreative extends SimuXCommand<Player> {
+public final class SubCreative extends SimuXCommand<Player> {
 
     @Override
     protected String usage() {

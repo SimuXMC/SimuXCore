@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 @Description("Sets the player's gamemode to spectator")
 @Aliases(value = "sp", registerAsTabCompletions = true)
 @SubCommand(parent = CmdGamemode.class)
-public class SubSpectator extends SimuXCommand<Player> {
+public final class SubSpectator extends SimuXCommand<Player> {
 
     @Override
     protected String usage() {

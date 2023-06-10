@@ -9,6 +9,10 @@ public class ComponentUtils {
     private static final LegacyComponentSerializer legacyComponentSerializer = LegacyComponentSerializer.legacyAmpersand();
     private static final MiniMessage miniMessage = MiniMessage.miniMessage();
 
+    private ComponentUtils() {
+        throw new IllegalStateException("A utility class should not be instantiated.");
+    }
+
     public static String componentToString(Component component) {
         return legacyComponentSerializer.serialize(component);
     }

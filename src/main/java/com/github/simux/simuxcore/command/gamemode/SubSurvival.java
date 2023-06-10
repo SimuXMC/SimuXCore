@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 @Description("Sets the player's gamemode to survival")
 @Aliases(value = "s", registerAsTabCompletions = true)
 @SubCommand(parent = CmdGamemode.class)
-public class SubSurvival extends SimuXCommand<Player> {
+public final class SubSurvival extends SimuXCommand<Player> {
 
     @Override
     protected String usage() {

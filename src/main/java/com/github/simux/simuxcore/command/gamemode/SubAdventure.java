@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 @Description("Sets the player's gamemode to adventure")
 @Aliases(value = "a", registerAsTabCompletions = true)
 @SubCommand(parent = CmdGamemode.class)
-public class SubAdventure extends SimuXCommand<Player> {
+public final class SubAdventure extends SimuXCommand<Player> {
 
     @Override
     protected String usage() {
