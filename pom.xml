@@ -39,7 +39,6 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <outputFile>C:/Users/ryanb/Desktop/Servers/SimuX Local/plugins/SimuXCore.jar</outputFile>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
